@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partner Agreement Template - ActiveCampaign</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            line-height: 1.8;
+            color: #2C3E50;
+            background: #ffffff;
+            padding: 2rem;
+            max-width: 8.5in;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 3px double #2C3E50;
+        }
+
+        h1 {
+            font-size: 1.75rem;
+            color: #2C3E50;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .agreement-date {
+            font-size: 1rem;
+            color: #6C757D;
+            margin-top: 1rem;
+        }
+
+        h2 {
+            font-size: 1.25rem;
+            color: #2C3E50;
+            margin: 2rem 0 1rem 0;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        h3 {
+            font-size: 1.125rem;
+            color: #2C3E50;
+            margin: 1.5rem 0 0.75rem 0;
+            font-weight: 700;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            text-align: justify;
+        }
+
+        .parties {
+            background: #F8F9FA;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border: 1px solid #DEE2E6;
+        }
+
+        .section-number {
+            font-weight: 700;
+            margin-right: 0.5rem;
+        }
+
+        ol {
+            margin: 1rem 0 1rem 2rem;
+        }
+
+        ol li {
+            margin-bottom: 1rem;
+        }
+
+        ul {
+            margin: 1rem 0 1rem 2.5rem;
+        }
+
+        ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .subsection {
+            margin-left: 2rem;
+        }
+
+        .definition {
+            font-style: italic;
+            margin-left: 1rem;
+        }
+
+        .signature-block {
+            margin-top: 3rem;
+            page-break-inside: avoid;
+        }
+
+        .signature-line {
+            border-top: 1px solid #2C3E50;
+            margin-top: 3rem;
+            padding-top: 0.5rem;
+        }
+
+        .signature-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .signature-field {
+            margin-bottom: 2rem;
+        }
+
+        .signature-field label {
+            display: block;
+            font-size: 0.875rem;
+            color: #6C757D;
+            margin-bottom: 0.25rem;
+        }
+
+        .signature-field .line {
+            border-bottom: 1px solid #2C3E50;
+            min-height: 2rem;
+            margin-top: 0.5rem;
+        }
+
+        .footer {
+            margin-top: 3rem;
+            padding-top: 1rem;
+            border-top: 1px solid #DEE2E6;
+            text-align: center;
+            font-size: 0.75rem;
+            color: #6C757D;
+        }
+
+        .page-break {
+            page-break-after: always;
+        }
+
+        @media print {
+            body {
+                padding: 0.5in;
+            }
+            .signature-block {
+                page-break-before: auto;
+            }
+        }
+
+        @page {
+            margin: 0.75in;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>ActiveCampaign Agency Partner Agreement</h1>
+        <p class="agreement-date">Effective Date: ___________________</p>
+    </div>
+
+    <div class="parties">
+        <p style="margin-bottom: 0.5rem;"><strong>This Agency Partner Agreement ("Agreement") is entered into between:</strong></p>
+        <p style="margin-bottom: 0.5rem;">
+            <strong>ActiveCampaign, LLC</strong> ("Company")<br>
+            Address: [Company Address]<br>
+            Contact: partners@example.com
+        </p>
+        <p style="margin-bottom: 0;">
+            <strong>AND</strong>
+        </p>
+        <p style="margin-top: 0.5rem;">
+            <strong>[Partner Legal Name]</strong> ("Partner")<br>
+            Address: _________________________________<br>
+            Email: _________________________________<br>
+            Tax ID: _________________________________
+        </p>
+    </div>
+
+    <section>
+        <h2>1. Definitions</h2>
+        <ol type="a">
+            <li>
+                <strong>"Partner Program"</strong> refers to the ActiveCampaign Agency Partner Program as described
+                in the Partner Program Overview document.
+            </li>
+            <li>
+                <strong>"Referred Customer"</strong> means any business or individual that signs up for a paid
+                ActiveCampaign subscription through the Partner's unique referral link or tracking code.
+            </li>
+            <li>
+                <strong>"Commission"</strong> means the recurring percentage-based payment earned by Partner for
+                each Referred Customer's active subscription.
+            </li>
+            <li>
+                <strong>"Tier Level"</strong> refers to the commission rate tier (Bronze, Silver, or Gold) based
+                on the Partner's total number of active Referred Customers.
+            </li>
+            <li>
+                <strong>"MRR"</strong> means Monthly Recurring Revenue, calculated as the total monthly subscription
+                fees paid by all of Partner's active Referred Customers.
+            </li>
+            <li>
+                <strong>"Partner Portal"</strong> refers to the online dashboard provided to Partner for tracking
+                referrals, commissions, and program resources.
+            </li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>2. Scope of Partnership</h2>
+        <ol type="a">
+            <li>
+                <strong>Non-Exclusive Partnership:</strong> This Agreement establishes a non-exclusive partnership.
+                Both parties may enter into similar arrangements with other entities.
+            </li>
+            <li>
+                <strong>Partner Responsibilities:</strong> Partner agrees to promote ActiveCampaign's services to
+                potential customers in a professional manner, providing accurate information about features, pricing,
+                and capabilities.
+            </li>
+            <li>
+                <strong>Referral Process:</strong> Partner will use the unique referral link or tracking code provided
+                by Company to ensure proper attribution of Referred Customers.
+            </li>
+            <li>
+                <strong>Territory:</strong> Partner may refer customers from any geographic location where ActiveCampaign
+                operates, subject to applicable laws and regulations.
+            </li>
+        </ol>
+    </section>
+
+    <div class="page-break"></div>
+
+    <section>
+        <h2>3. Commission Structure</h2>
+        <ol type="a">
+            <li>
+                <strong>Commission Rates:</strong> Partner shall earn recurring commissions based on the following tier structure:
+                <ul>
+                    <li><strong>Bronze Partner</strong> (0-10 active customers): 20% of MRR</li>
+                    <li><strong>Silver Partner</strong> (11-25 active customers): 25% of MRR</li>
+                    <li><strong>Gold Partner</strong> (26+ active customers): 30% of MRR</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Commission Calculation:</strong> Monthly commissions are calculated as:<br>
+                <span class="definition">Monthly Commission = (Total MRR of all active Referred Customers) × (Current Tier Rate)</span>
+            </li>
+            <li>
+                <strong>Tier Application:</strong> The Partner's current tier rate applies to ALL active Referred Customers,
+                regardless of when they were referred. Tier changes take effect at the beginning of the month in which
+                the new tier is achieved.
+            </li>
+            <li>
+                <strong>Commission Duration:</strong> Partner earns commissions for as long as a Referred Customer maintains
+                an active paid subscription. Commissions cease when a customer cancels or suspends their account.
+            </li>
+            <li>
+                <strong>Trial Period:</strong> Commissions begin only when a Referred Customer converts to a paid subscription
+                after their free trial period.
+            </li>
+            <li>
+                <strong>Upgrades and Downgrades:</strong> If a Referred Customer changes their subscription plan, commissions
+                adjust automatically to reflect the new monthly subscription value.
+            </li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>4. Payment Terms</h2>
+        <ol type="a">
+            <li>
+                <strong>Payment Schedule:</strong> Commissions are calculated at the end of each calendar month and paid
+                within 15 days of month end.
+            </li>
+            <li>
+                <strong>Minimum Payout:</strong> A minimum commission balance of $50.00 USD is required for payment
+                processing. Balances below this threshold will roll over to the following month.
+            </li>
+            <li>
+                <strong>Payment Methods:</strong> Payments will be made via Partner's selected method:
+                <ul>
+                    <li>Direct deposit (ACH) for US bank accounts</li>
+                    <li>PayPal transfer</li>
+                    <li>Wire transfer (international, fees may apply)</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Currency:</strong> All commission payments are made in United States Dollars (USD).
+            </li>
+            <li>
+                <strong>Tax Responsibility:</strong> Partner is solely responsible for all taxes associated with
+                commission payments. Partner agrees to provide required tax documentation (W-9 or W-8BEN) before
+                receiving first payment.
+            </li>
+            <li>
+                <strong>Refunds and Chargebacks:</strong> If a Referred Customer receives a refund for any payment
+                period, the corresponding commission for that period will be deducted from Partner's next payment.
+            </li>
+        </ol>
+    </section>
+
+    <div class="page-break"></div>
+
+    <section>
+        <h2>5. Partner Obligations</h2>
+        <ol type="a">
+            <li>
+                <strong>Professional Conduct:</strong> Partner shall represent Company professionally and accurately,
+                complying with all applicable laws and regulations.
+            </li>
+            <li>
+                <strong>Accurate Information:</strong> Partner warrants that all information provided in the application
+                and partner profile is accurate and will be kept up to date.
+            </li>
+            <li>
+                <strong>Brand Guidelines:</strong> Partner agrees to follow Company's brand guidelines when using
+                Company name, logo, or marketing materials.
+            </li>
+            <li>
+                <strong>Prohibited Activities:</strong> Partner shall NOT:
+                <ul>
+                    <li>Make false or misleading claims about Company products or services</li>
+                    <li>Engage in spamming, unsolicited bulk email, or deceptive marketing practices</li>
+                    <li>Refer fraudulent or fake accounts</li>
+                    <li>Self-refer or refer related entities without disclosure</li>
+                    <li>Violate any applicable laws, including data protection and privacy regulations</li>
+                    <li>Disparage Company or its products publicly</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Compliance:</strong> Partner agrees to comply with all applicable anti-spam laws (including CAN-SPAM,
+                GDPR, CASL) when promoting Company services.
+            </li>
+            <li>
+                <strong>Customer Support:</strong> While Company provides product support to all customers, Partner is
+                encouraged to provide initial guidance and onboarding assistance to Referred Customers.
+            </li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>6. Company Obligations</h2>
+        <ol type="a">
+            <li>
+                <strong>Portal Access:</strong> Company shall provide Partner with access to the Partner Portal for
+                tracking referrals, commissions, and accessing resources.
+            </li>
+            <li>
+                <strong>Timely Payments:</strong> Company agrees to process commission payments according to the
+                schedule outlined in Section 4.
+            </li>
+            <li>
+                <strong>Marketing Resources:</strong> Company will provide Partner with marketing materials, training
+                resources, and product information.
+            </li>
+            <li>
+                <strong>Partner Support:</strong> Company will provide reasonable support to Partner through designated
+                partner success managers and support channels.
+            </li>
+            <li>
+                <strong>Tracking and Attribution:</strong> Company will maintain accurate tracking systems to properly
+                attribute Referred Customers to Partner.
+            </li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>7. Intellectual Property</h2>
+        <ol type="a">
+            <li>
+                <strong>Company IP:</strong> All intellectual property rights in Company name, logo, trademarks,
+                products, and services remain the exclusive property of Company.
+            </li>
+            <li>
+                <strong>Limited License:</strong> Company grants Partner a limited, non-exclusive, non-transferable
+                license to use Company trademarks and marketing materials solely for the purpose of promoting Company
+                services under this Agreement.
+            </li>
+            <li>
+                <strong>Partner IP:</strong> Partner retains all rights to Partner's own intellectual property,
+                including business name, logo, and proprietary materials.
+            </li>
+            <li>
+                <strong>No Implied Rights:</strong> Nothing in this Agreement grants either party any rights not
+                explicitly stated herein.
+            </li>
+        </ol>
+    </section>
+
+    <div class="page-break"></div>
+
+    <section>
+        <h2>8. Confidentiality</h2>
+        <ol type="a">
+            <li>
+                <strong>Confidential Information:</strong> Both parties may have access to confidential information
+                including business strategies, customer data, pricing, and proprietary processes.
+            </li>
+            <li>
+                <strong>Non-Disclosure:</strong> Each party agrees not to disclose the other party's confidential
+                information to third parties without prior written consent.
+            </li>
+            <li>
+                <strong>Exceptions:</strong> Confidential information does not include information that:
+                <ul>
+                    <li>Is or becomes publicly available through no breach of this Agreement</li>
+                    <li>Was rightfully known before disclosure</li>
+                    <li>Is independently developed without use of confidential information</li>
+                    <li>Must be disclosed by law or court order</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Survival:</strong> Confidentiality obligations survive termination of this Agreement for
+                a period of three (3) years.
+            </li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>9. Term and Termination</h2>
+        <ol type="a">
+            <li>
+                <strong>Initial Term:</strong> This Agreement begins on the Effective Date and continues until
+                terminated by either party.
+            </li>
+            <li>
+                <strong>Termination by Partner:</strong> Partner may terminate this Agreement at any time with
+                30 days written notice to Company.
+            </li>
+            <li>
+                <strong>Termination by Company:</strong> Company may terminate this Agreement:
+                <ul>
+                    <li>With 30 days written notice for any reason</li>
+                    <li>Immediately for breach of Agreement terms</li>
+                    <li>Immediately if Partner engages in fraudulent or illegal activities</li>
+                    <li>Immediately if Partner violates brand guidelines or prohibited activities</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Effect of Termination:</strong> Upon termination:
+                <ul>
+                    <li>Partner's access to Partner Portal will be revoked</li>
+                    <li>Partner must cease using Company trademarks and marketing materials</li>
+                    <li>Partner will receive commission payments for existing Referred Customers for 90 days
+                        following termination date (wind-down period)</li>
+                    <li>After the 90-day wind-down period, Partner forfeits all future commissions</li>
+                    <li>All outstanding payments owed will be settled within 60 days</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Survival:</strong> Sections 7 (Intellectual Property), 8 (Confidentiality), 10 (Limitation
+                of Liability), and 12 (General Provisions) survive termination.
+            </li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>10. Limitation of Liability</h2>
+        <ol type="a">
+            <li>
+                <strong>Independent Contractor:</strong> Partner is an independent contractor, not an employee,
+                agent, or legal representative of Company. Partner has no authority to bind Company to any obligation.
+            </li>
+            <li>
+                <strong>No Warranties:</strong> EXCEPT AS EXPRESSLY PROVIDED IN THIS AGREEMENT, COMPANY MAKES NO
+                WARRANTIES, EXPRESS OR IMPLIED, INCLUDING WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
+            </li>
+            <li>
+                <strong>Limitation:</strong> IN NO EVENT SHALL EITHER PARTY BE LIABLE FOR INDIRECT, INCIDENTAL,
+                SPECIAL, OR CONSEQUENTIAL DAMAGES ARISING OUT OF THIS AGREEMENT.
+            </li>
+            <li>
+                <strong>Cap on Liability:</strong> Each party's total liability under this Agreement shall not exceed
+                the total commissions paid to Partner in the 12 months preceding the claim.
+            </li>
+            <li>
+                <strong>Indemnification:</strong> Partner agrees to indemnify and hold Company harmless from any claims
+                arising from Partner's breach of this Agreement or violation of applicable laws.
+            </li>
+        </ol>
+    </section>
+
+    <div class="page-break"></div>
+
+    <section>
+        <h2>11. Data Protection and Privacy</h2>
+        <ol type="a">
+            <li>
+                <strong>Customer Data:</strong> Partner may have access to customer contact information through the
+                referral process. Partner agrees to handle all data in compliance with applicable privacy laws.
+            </li>
+            <li>
+                <strong>GDPR Compliance:</strong> If Partner refers customers from the European Union, Partner agrees
+                to comply with GDPR requirements.
+            </li>
+            <li>
+                <strong>Data Use:</strong> Partner shall use customer data solely for the purpose of facilitating
+                referrals and providing customer support. Partner shall not sell, trade, or share customer data with
+                third parties.
+            </li>
+            <li>
+                <strong>Security:</strong> Partner agrees to implement reasonable security measures to protect any
+                customer data in Partner's possession.
+            </li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>12. General Provisions</h2>
+        <ol type="a">
+            <li>
+                <strong>Entire Agreement:</strong> This Agreement, together with the Partner Program Overview and
+                related program documents, constitutes the entire agreement between the parties.
+            </li>
+            <li>
+                <strong>Amendments:</strong> Company may modify this Agreement or program terms with 30 days notice
+                to Partner. Continued participation after notice period constitutes acceptance of changes.
+            </li>
+            <li>
+                <strong>Governing Law:</strong> This Agreement shall be governed by the laws of [State/Country],
+                without regard to conflict of law principles.
+            </li>
+            <li>
+                <strong>Dispute Resolution:</strong> Any disputes shall first be attempted to be resolved through
+                good faith negotiation. If unresolved, disputes shall be settled through binding arbitration.
+            </li>
+            <li>
+                <strong>Assignment:</strong> Partner may not assign this Agreement without prior written consent
+                from Company. Company may assign this Agreement to any successor or affiliate.
+            </li>
+            <li>
+                <strong>Severability:</strong> If any provision of this Agreement is found unenforceable, the
+                remaining provisions remain in full effect.
+            </li>
+            <li>
+                <strong>Waiver:</strong> Failure to enforce any provision does not constitute a waiver of that
+                provision or any other provision.
+            </li>
+            <li>
+                <strong>Force Majeure:</strong> Neither party shall be liable for failure to perform due to
+                circumstances beyond reasonable control.
+            </li>
+            <li>
+                <strong>Notices:</strong> All notices shall be in writing and delivered via email to the addresses
+                provided in this Agreement.
+            </li>
+        </ol>
+    </section>
+
+    <div class="signature-block">
+        <h2>13. Acceptance and Signatures</h2>
+        <p>
+            By signing below, both parties acknowledge that they have read, understood, and agree to be bound by
+            the terms and conditions of this ActiveCampaign Agency Partner Agreement.
+        </p>
+
+        <div class="signature-grid">
+            <div>
+                <div class="signature-field">
+                    <label>Company Representative Signature:</label>
+                    <div class="line"></div>
+                </div>
+                <div class="signature-field">
+                    <label>Printed Name:</label>
+                    <div class="line"></div>
+                </div>
+                <div class="signature-field">
+                    <label>Title:</label>
+                    <div class="line"></div>
+                </div>
+                <div class="signature-field">
+                    <label>Date:</label>
+                    <div class="line"></div>
+                </div>
+            </div>
+
+            <div>
+                <div class="signature-field">
+                    <label>Partner Signature:</label>
+                    <div class="line"></div>
+                </div>
+                <div class="signature-field">
+                    <label>Printed Name:</label>
+                    <div class="line"></div>
+                </div>
+                <div class="signature-field">
+                    <label>Title:</label>
+                    <div class="line"></div>
+                </div>
+                <div class="signature-field">
+                    <label>Date:</label>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p><strong>ActiveCampaign Agency Partner Agreement</strong></p>
+        <p>This is a template agreement. Actual terms may vary. Consult legal counsel before signing.</p>
+        <p style="margin-top: 0.5rem;">Document Version 1.0 | Updated November 2024</p>
+    </div>
+</body>
+</html>

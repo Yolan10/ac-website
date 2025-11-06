@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commission Structure Guide - ActiveCampaign Partners</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #2C3E50;
+            background: #ffffff;
+            padding: 2rem;
+            max-width: 8.5in;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 3px solid #10B981;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #0066CC;
+            margin-bottom: 0.5rem;
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: #10B981;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            font-size: 1.125rem;
+            color: #6C757D;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            color: #2C3E50;
+            margin: 2rem 0 1rem 0;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #E5E5E5;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            color: #10B981;
+            margin: 1.5rem 0 0.75rem 0;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        ul, ol {
+            margin: 1rem 0 1rem 2rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        .tier-card {
+            border: 2px solid #E5E5E5;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            background: #FAFAFA;
+        }
+
+        .tier-card.bronze {
+            border-color: #CD7F32;
+            background: linear-gradient(135deg, #FFF8F0 0%, #FFFFFF 100%);
+        }
+
+        .tier-card.silver {
+            border-color: #C0C0C0;
+            background: linear-gradient(135deg, #F8F8F8 0%, #FFFFFF 100%);
+        }
+
+        .tier-card.gold {
+            border-color: #FFD700;
+            background: linear-gradient(135deg, #FFFBEA 0%, #FFFFFF 100%);
+        }
+
+        .tier-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .tier-name {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .tier-rate {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #10B981;
+        }
+
+        .highlight-box {
+            background: #F0FDF4;
+            border-left: 4px solid #10B981;
+            padding: 1rem;
+            margin: 1.5rem 0;
+        }
+
+        .calculation-box {
+            background: #F8F9FA;
+            border: 2px solid #0066CC;
+            border-radius: 4px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            font-family: 'Courier New', monospace;
+        }
+
+        .calculation-step {
+            margin: 0.5rem 0;
+            padding: 0.5rem;
+            background: white;
+            border-radius: 4px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+        }
+
+        th {
+            background: #10B981;
+            color: white;
+            padding: 0.75rem;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        td {
+            padding: 0.75rem;
+            border: 1px solid #E5E5E5;
+        }
+
+        tr:nth-child(even) {
+            background: #F8F9FA;
+        }
+
+        .info-box {
+            background: #EFF6FF;
+            border-left: 4px solid #0066CC;
+            padding: 1rem;
+            margin: 1.5rem 0;
+        }
+
+        .warning-box {
+            background: #FEF3C7;
+            border-left: 4px solid #F59E0B;
+            padding: 1rem;
+            margin: 1.5rem 0;
+        }
+
+        .footer {
+            margin-top: 3rem;
+            padding-top: 1rem;
+            border-top: 2px solid #E5E5E5;
+            text-align: center;
+            font-size: 0.875rem;
+            color: #6C757D;
+        }
+
+        .page-break {
+            page-break-after: always;
+        }
+
+        @media print {
+            body {
+                padding: 0.5in;
+            }
+            .tier-card, .highlight-box, .calculation-box {
+                break-inside: avoid;
+            }
+        }
+
+        @page {
+            margin: 0.5in;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">ActiveCampaign</div>
+        <h1>Commission Structure Guide</h1>
+        <p class="subtitle">Understanding Your Partner Earnings</p>
+    </div>
+
+    <section>
+        <h2>Three-Tier Commission System</h2>
+        <p>
+            Our transparent commission structure rewards your growth with higher earning percentages as you
+            refer more customers. All commission rates apply to your total customer base—not just new referrals.
+        </p>
+
+        <div class="tier-card bronze">
+            <div class="tier-header">
+                <span class="tier-name">🥉 Bronze Partner</span>
+                <span class="tier-rate">20%</span>
+            </div>
+            <p><strong>Qualification:</strong> 0 - 10 active customers</p>
+            <p><strong>Starting Level:</strong> All new partners begin at Bronze tier</p>
+            <p><strong>Typical Monthly Earnings:</strong> $500 - $2,000</p>
+            <p style="margin-bottom: 0;"><strong>Focus:</strong> Building your initial customer base and learning the platform</p>
+        </div>
+
+        <div class="tier-card silver">
+            <div class="tier-header">
+                <span class="tier-name">🥈 Silver Partner</span>
+                <span class="tier-rate">25%</span>
+            </div>
+            <p><strong>Qualification:</strong> 11 - 25 active customers</p>
+            <p><strong>Upgrade Benefit:</strong> +5% rate increase on ALL customers</p>
+            <p><strong>Typical Monthly Earnings:</strong> $2,500 - $6,000</p>
+            <p style="margin-bottom: 0;"><strong>Focus:</strong> Scaling your referrals and establishing consistent revenue</p>
+        </div>
+
+        <div class="tier-card gold">
+            <div class="tier-header">
+                <span class="tier-name">🥇 Gold Partner</span>
+                <span class="tier-rate">30%</span>
+            </div>
+            <p><strong>Qualification:</strong> 26+ active customers</p>
+            <p><strong>Upgrade Benefit:</strong> +10% rate increase from Bronze on ALL customers</p>
+            <p><strong>Typical Monthly Earnings:</strong> $7,500 - $25,000+</p>
+            <p style="margin-bottom: 0;"><strong>Focus:</strong> Maximizing revenue and building long-term partnership value</p>
+        </div>
+    </section>
+
+    <div class="page-break"></div>
+
+    <section>
+        <h2>How Commissions Are Calculated</h2>
+
+        <h3>The Basic Formula</h3>
+        <div class="calculation-box">
+            <div class="calculation-step">
+                <strong>Monthly Commission =</strong> (Total Customer MRR) × (Your Tier Rate)
+            </div>
+        </div>
+
+        <p><strong>Where:</strong></p>
+        <ul>
+            <li><strong>Total Customer MRR</strong> = Sum of all monthly subscription values from your referred customers</li>
+            <li><strong>Your Tier Rate</strong> = 20%, 25%, or 30% based on your active customer count</li>
+        </ul>
+
+        <h3>Detailed Calculation Example - Bronze Tier</h3>
+        <div class="calculation-box">
+            <div class="calculation-step">
+                <strong>Scenario:</strong> You have 8 active customers (Bronze Tier - 20%)
+            </div>
+            <div class="calculation-step">
+                Customer 1: $199/month<br>
+                Customer 2: $299/month<br>
+                Customer 3: $149/month<br>
+                Customer 4: $349/month<br>
+                Customer 5: $199/month<br>
+                Customer 6: $249/month<br>
+                Customer 7: $399/month<br>
+                Customer 8: $179/month
+            </div>
+            <div class="calculation-step">
+                <strong>Total MRR:</strong> $2,022/month
+            </div>
+            <div class="calculation-step">
+                <strong>Your Commission:</strong> $2,022 × 20% = <strong style="color: #10B981; font-size: 1.25rem;">$404.40/month</strong>
+            </div>
+            <div class="calculation-step">
+                <strong>Annual Revenue:</strong> $404.40 × 12 = <strong style="color: #10B981; font-size: 1.25rem;">$4,852.80/year</strong>
+            </div>
+        </div>
+
+        <h3>Tier Upgrade Impact Example</h3>
+        <p>See how your earnings increase when you move to a higher tier with the same customer base:</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Tier Level</th>
+                    <th>Rate</th>
+                    <th>Monthly Commission</th>
+                    <th>Annual Revenue</th>
+                    <th>Increase</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Bronze (8 customers)</strong></td>
+                    <td>20%</td>
+                    <td>$404</td>
+                    <td>$4,853</td>
+                    <td>Baseline</td>
+                </tr>
+                <tr>
+                    <td><strong>Silver (11 customers, same MRR)</strong></td>
+                    <td>25%</td>
+                    <td>$506</td>
+                    <td>$6,066</td>
+                    <td style="color: #10B981;"><strong>+$1,213/year (+25%)</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>Gold (26 customers, same MRR)</strong></td>
+                    <td>30%</td>
+                    <td>$607</td>
+                    <td>$7,279</td>
+                    <td style="color: #10B981;"><strong>+$2,426/year (+50%)</strong></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="highlight-box">
+            <p style="margin-bottom: 0;">
+                <strong>Key Insight:</strong> When you upgrade tiers, your NEW commission rate applies to ALL your customers
+                retroactively from the beginning of the month you qualify. This creates significant revenue jumps as you scale.
+            </p>
+        </div>
+    </section>
+
+    <div class="page-break"></div>
+
+    <section>
+        <h2>Real-World Earning Scenarios</h2>
+
+        <h3>Scenario 1: Small Agency (15 customers - Silver Tier)</h3>
+        <div class="calculation-box">
+            <div class="calculation-step">
+                <strong>Customer Distribution:</strong><br>
+                • 5 customers on $149/month plan = $745<br>
+                • 7 customers on $249/month plan = $1,743<br>
+                • 3 customers on $399/month plan = $1,197
+            </div>
+            <div class="calculation-step">
+                <strong>Total MRR:</strong> $3,685/month
+            </div>
+            <div class="calculation-step">
+                <strong>Commission (25%):</strong> $3,685 × 25% = <strong style="color: #10B981;">$921.25/month</strong>
+            </div>
+            <div class="calculation-step">
+                <strong>Annual Revenue:</strong> <strong style="color: #10B981; font-size: 1.25rem;">$11,055/year</strong>
+            </div>
+        </div>
+
+        <h3>Scenario 2: Growing Agency (30 customers - Gold Tier)</h3>
+        <div class="calculation-box">
+            <div class="calculation-step">
+                <strong>Customer Distribution:</strong><br>
+                • 10 customers on $149/month plan = $1,490<br>
+                • 12 customers on $249/month plan = $2,988<br>
+                • 6 customers on $399/month plan = $2,394<br>
+                • 2 customers on $599/month plan = $1,198
+            </div>
+            <div class="calculation-step">
+                <strong>Total MRR:</strong> $8,070/month
+            </div>
+            <div class="calculation-step">
+                <strong>Commission (30%):</strong> $8,070 × 30% = <strong style="color: #10B981;">$2,421/month</strong>
+            </div>
+            <div class="calculation-step">
+                <strong>Annual Revenue:</strong> <strong style="color: #10B981; font-size: 1.25rem;">$29,052/year</strong>
+            </div>
+        </div>
+
+        <h3>Scenario 3: Established Agency (50 customers - Gold Tier)</h3>
+        <div class="calculation-box">
+            <div class="calculation-step">
+                <strong>Customer Distribution:</strong><br>
+                • 15 customers on $149/month plan = $2,235<br>
+                • 20 customers on $249/month plan = $4,980<br>
+                • 10 customers on $399/month plan = $3,990<br>
+                • 5 customers on $599/month plan = $2,995
+            </div>
+            <div class="calculation-step">
+                <strong>Total MRR:</strong> $14,200/month
+            </div>
+            <div class="calculation-step">
+                <strong>Commission (30%):</strong> $14,200 × 30% = <strong style="color: #10B981;">$4,260/month</strong>
+            </div>
+            <div class="calculation-step">
+                <strong>Annual Revenue:</strong> <strong style="color: #10B981; font-size: 1.25rem;">$51,120/year</strong>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Payment Schedule & Terms</h2>
+
+        <h3>When You Get Paid</h3>
+        <ul>
+            <li><strong>Monthly Payments:</strong> Commissions are calculated at the end of each calendar month</li>
+            <li><strong>Payment Date:</strong> Processed within 15 days after month end (typically by the 15th)</li>
+            <li><strong>First Payment:</strong> Your first commission payment occurs in the month following your first referral</li>
+        </ul>
+
+        <h3>Payment Methods</h3>
+        <ul>
+            <li><strong>Direct Deposit (ACH):</strong> Available for US bank accounts (fastest option)</li>
+            <li><strong>PayPal:</strong> Available globally (small processing fee may apply)</li>
+            <li><strong>Wire Transfer:</strong> Available for international partners (fees may apply)</li>
+        </ul>
+
+        <div class="info-box">
+            <p style="margin-bottom: 0;">
+                <strong>Minimum Payout Threshold:</strong> $50 - If your monthly commission is below $50, it will roll over
+                to the following month until the threshold is met.
+            </p>
+        </div>
+
+        <h3>Tax Documentation</h3>
+        <ul>
+            <li><strong>US Partners:</strong> Must complete W-9 form before first payment</li>
+            <li><strong>International Partners:</strong> Must complete W-8BEN form</li>
+            <li><strong>Annual Reporting:</strong> 1099 forms issued to US partners earning $600+ annually</li>
+        </ul>
+    </section>
+
+    <div class="page-break"></div>
+
+    <section>
+        <h2>Frequently Asked Questions</h2>
+
+        <h3>What happens when a customer upgrades their plan?</h3>
+        <p>
+            Great news! Your commission automatically increases because it's based on the customer's current subscription
+            value. If a customer upgrades from $149/month to $299/month, you immediately start earning commission on the
+            higher amount.
+        </p>
+
+        <h3>What if a customer downgrades?</h3>
+        <p>
+            Your commission adjusts to reflect the new lower subscription value. However, as long as the customer remains
+            active, you continue earning commission.
+        </p>
+
+        <h3>Do I earn commission during free trials?</h3>
+        <p>
+            No, commissions begin when a customer converts to a paid subscription after their trial period. Once they
+            become a paying customer, you earn commission on every payment they make.
+        </p>
+
+        <h3>What happens if a customer cancels?</h3>
+        <p>
+            Commission stops for that specific customer when they cancel. However, you continue earning from all your
+            other active customers. Your tier level is based on your current active customer count.
+        </p>
+
+        <h3>If I drop below a tier threshold, do I lose my tier rate?</h3>
+        <p>
+            Yes, tier rates are based on your current active customer count. If you have 26 customers (Gold - 30%) and
+            some cancel, dropping you to 24 customers, you'll move back to Silver tier (25%) starting the following month.
+            This encourages partners to continuously acquire new customers.
+        </p>
+
+        <h3>How do tier changes affect existing customers?</h3>
+        <p>
+            Your current tier rate applies to ALL your active customers, regardless of when they signed up. If you upgrade
+            from Silver to Gold, you immediately start earning 30% on all existing and new customers.
+        </p>
+
+        <h3>Can I see my commission calculations in real-time?</h3>
+        <p>
+            Yes! The partner portal shows live data including:
+        </p>
+        <ul>
+            <li>Current active customer count</li>
+            <li>Total Monthly Recurring Revenue (MRR)</li>
+            <li>Current tier and commission rate</li>
+            <li>Month-to-date commission earnings</li>
+            <li>Individual customer subscription values</li>
+            <li>Payment history and upcoming payouts</li>
+        </ul>
+
+        <h3>Are there any deductions from my commission?</h3>
+        <p>
+            No hidden deductions. The commission you see calculated is what you receive (minus any payment processing
+            fees if using certain methods like international wire transfer). For example, PayPal may charge a small
+            receiving fee depending on your country.
+        </p>
+
+        <h3>What if a customer gets a refund?</h3>
+        <p>
+            If a customer receives a refund for a month they already paid, the corresponding commission for that month
+            will be deducted from your next payment.
+        </p>
+
+        <h3>How quickly do new referrals count toward my customer total?</h3>
+        <p>
+            As soon as a referred customer completes their first paid month, they count toward your active customer
+            total and tier calculation. Trial users don't count until they convert to paid.
+        </p>
+    </section>
+
+    <section>
+        <h2>Maximizing Your Commission Earnings</h2>
+
+        <h3>Strategy 1: Focus on Higher-Value Plans</h3>
+        <p>
+            Recommend plans that best fit your client's needs. Larger businesses often need higher-tier plans, which
+            increases your MRR without adding more customers to manage.
+        </p>
+
+        <h3>Strategy 2: Aim for Tier Upgrades</h3>
+        <p>
+            Each tier upgrade gives you a significant raise on ALL customers. Calculate how many more customers you
+            need to reach the next tier and create a plan to get there.
+        </p>
+
+        <h3>Strategy 3: Reduce Churn</h3>
+        <p>
+            Help your customers succeed with ActiveCampaign. Provide onboarding support, training, and best practices
+            to keep them active long-term. Lower churn = more stable recurring revenue for you.
+        </p>
+
+        <h3>Strategy 4: Encourage Upgrades</h3>
+        <p>
+            As your customers grow, they may need more features. Stay in touch and recommend plan upgrades when
+            appropriate—your commission grows along with their business.
+        </p>
+
+        <div class="highlight-box">
+            <p style="margin-bottom: 0;">
+                <strong>Pro Tip:</strong> Partners who provide excellent customer support and stay engaged with their
+                referrals see 40% higher retention rates, leading to more stable long-term income.
+            </p>
+        </div>
+    </section>
+
+    <div class="footer">
+        <p><strong>ActiveCampaign Agency Partner Program - Commission Structure Guide</strong></p>
+        <p>For commission questions, contact: partners@example.com</p>
+        <p style="margin-top: 1rem;">This guide is for informational purposes. Commission terms subject to partner agreement. Updated November 2024.</p>
+    </div>
+</body>
+</html>
