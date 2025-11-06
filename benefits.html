@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/components.css">
   <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/calculator.css">
 </head>
 <body>
 
@@ -266,27 +267,93 @@
         <p class="section-subtitle">See how recurring commissions can transform your business revenue.</p>
       </div>
 
-      <div style="max-width: 600px; margin: 0 auto; background: white; padding: 2rem; border-radius: 8px; box-shadow: var(--box-shadow);">
-        <h3 class="text-center mb-3">Example Scenario</h3>
-
-        <div class="stat">
-          <span class="stat-label">If you refer 20 customers with an average monthly plan of $150:</span>
+      <!-- Interactive Commission Calculator -->
+      <div id="commission-calculator">
+        <div class="calculator-header">
+          <h3>Calculate Your Potential Earnings</h3>
+          <p>Adjust the values below to see your potential monthly and annual commission</p>
         </div>
 
-        <div class="stats-grid mt-3">
-          <div class="stat">
-            <span class="stat-number" style="font-size: 2rem;">$750</span>
-            <span class="stat-label">Monthly Commission</span>
-            <p style="font-size: 0.875rem; color: var(--gray);">At 25% commission rate</p>
+        <!-- Inputs -->
+        <div class="calculator-inputs">
+          <div class="input-group">
+            <div class="input-label-value">
+              <label for="customer-count">Number of Customers</label>
+              <span class="input-value"><span id="customer-count-value">20</span></span>
+            </div>
+            <input
+              type="range"
+              id="customer-count"
+              min="0"
+              max="50"
+              value="20"
+              step="1"
+              aria-label="Number of customers"
+            />
           </div>
-          <div class="stat">
-            <span class="stat-number" style="font-size: 2rem;">$9,000</span>
-            <span class="stat-label">Annual Revenue</span>
-            <p style="font-size: 0.875rem; color: var(--gray);">Recurring passive income</p>
+
+          <div class="input-group">
+            <label for="avg-plan-value">Average Monthly Plan Value</label>
+            <div class="input-prefix">
+              <input
+                type="number"
+                id="avg-plan-value"
+                min="0"
+                max="1000"
+                value="150"
+                step="10"
+                aria-label="Average plan value"
+              />
+            </div>
           </div>
         </div>
 
-        <p class="text-center mt-3" style="color: var(--gray); font-size: 0.875rem;">This is recurring revenue that compounds as you add more customers. After year one, continue earning without additional work on existing referrals.</p>
+        <!-- Results -->
+        <div class="calculator-results">
+          <!-- Tier Display -->
+          <div class="tier-display">
+            <div id="tier-badge">Silver Partner</div>
+            <p>Commission Rate: <span id="commission-rate">25%</span></p>
+          </div>
+
+          <!-- Earnings -->
+          <div class="earnings-grid">
+            <div class="earning-item highlight">
+              <span class="earning-label">Monthly Commission</span>
+              <span class="earning-value" id="monthly-commission">$750</span>
+            </div>
+
+            <div class="earning-item">
+              <span class="earning-label">Annual Commission</span>
+              <span class="earning-value" id="annual-commission">$9,000</span>
+            </div>
+          </div>
+
+          <!-- Revenue Info -->
+          <div class="revenue-display">
+            <p>Total Customer Revenue: <span id="monthly-revenue">$3,000</span>/month</p>
+          </div>
+
+          <!-- Tier Progress -->
+          <div class="tier-progress">
+            <div class="tier-indicator active" data-tier-min="0" data-tier-max="10">
+              <span class="tier-indicator-name">Bronze</span>
+              <span class="tier-indicator-range">0-10 customers</span>
+            </div>
+            <div class="tier-indicator active" data-tier-min="11" data-tier-max="25">
+              <span class="tier-indicator-name">Silver</span>
+              <span class="tier-indicator-range">11-25 customers</span>
+            </div>
+            <div class="tier-indicator" data-tier-min="26" data-tier-max="-1">
+              <span class="tier-indicator-name">Gold</span>
+              <span class="tier-indicator-range">26+ customers</span>
+            </div>
+          </div>
+        </div>
+
+        <p class="text-center mt-3" style="color: var(--gray); font-size: 0.875rem;">
+          <i class="fas fa-info-circle" aria-hidden="true"></i> This calculator shows recurring revenue that compounds as you add more customers. Commissions continue as long as customers remain active.
+        </p>
       </div>
     </div>
   </section>
@@ -359,6 +426,7 @@
   </footer>
 
   <script src="js/main.js"></script>
+  <script src="js/calculator.js"></script>
 
 </body>
 </html>
