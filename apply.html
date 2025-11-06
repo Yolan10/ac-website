@@ -20,6 +20,7 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/components.css">
   <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/forms.css">
 </head>
 <body>
 
@@ -111,29 +112,29 @@
       <div style="max-width: 600px; margin: 0 auto;">
         <form id="contact-form" style="background: white; padding: 2rem; border-radius: 8px; box-shadow: var(--box-shadow);">
 
-          <div class="form-group">
-            <label for="name" class="form-label">Full Name *</label>
-            <input type="text" id="name" class="form-input" required placeholder="Your name">
+          <div class="form-group required">
+            <label for="name" class="form-label">Full Name</label>
+            <input type="text" id="name" name="name" class="form-input" required placeholder="Your name">
           </div>
 
-          <div class="form-group">
-            <label for="email" class="form-label">Email Address *</label>
-            <input type="email" id="email" class="form-input" required placeholder="your@email.com">
+          <div class="form-group required">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" id="email" name="email" class="form-input" required placeholder="your@email.com">
           </div>
 
           <div class="form-group">
             <label for="company" class="form-label">Company / Business Name</label>
-            <input type="text" id="company" class="form-input" placeholder="Your company name">
+            <input type="text" id="company" name="company" class="form-input" placeholder="Your company name">
           </div>
 
           <div class="form-group">
             <label for="website" class="form-label">Website URL</label>
-            <input type="url" id="website" class="form-input" placeholder="https://yourwebsite.com">
+            <input type="url" id="website" name="website" class="form-input" placeholder="https://yourwebsite.com">
           </div>
 
           <div class="form-group">
             <label for="business-type" class="form-label">Business Type</label>
-            <select id="business-type" class="form-select">
+            <select id="business-type" name="business-type" class="form-select">
               <option value="">Select your business type</option>
               <option value="agency">Marketing Agency</option>
               <option value="consultant">Consultant</option>
@@ -144,15 +145,15 @@
             </select>
           </div>
 
-          <div class="form-group">
-            <label for="message" class="form-label">Message *</label>
-            <textarea id="message" class="form-textarea" required placeholder="Tell us about your business and how you plan to promote ActiveCampaign..."></textarea>
+          <div class="form-group required">
+            <label for="message" class="form-label">Message</label>
+            <textarea id="message" name="message" class="form-textarea" required placeholder="Tell us about your business and how you plan to promote ActiveCampaign..." maxlength="1000"></textarea>
           </div>
 
-          <button type="submit" class="btn btn-primary btn-large" style="width: 100%;">Send Message</button>
+          <button type="submit" class="btn btn-primary btn-large" style="width: 100%;">Submit Application</button>
 
           <p style="text-align: center; margin-top: 1rem; font-size: 0.875rem; color: var(--gray);">
-            * Required fields. We respect your privacy and will never share your information.
+            We respect your privacy and will never share your information.
           </p>
         </form>
       </div>
@@ -357,6 +358,7 @@
   </footer>
 
   <script src="js/main.js"></script>
+  <script src="js/forms.js"></script>
 
 </body>
 </html>

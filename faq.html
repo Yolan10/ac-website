@@ -61,6 +61,22 @@
   <!-- FAQ Section -->
   <section>
     <div class="container">
+      <!-- FAQ Search -->
+      <div style="max-width: 600px; margin: 0 auto 3rem auto;">
+        <div style="position: relative;">
+          <input
+            type="text"
+            id="faq-search"
+            placeholder="Search frequently asked questions..."
+            style="width: 100%; padding: 1rem 3rem 1rem 1rem; font-size: 1rem; border: 2px solid var(--gray-light); border-radius: var(--border-radius); transition: var(--transition);"
+            aria-label="Search FAQ">
+          <i class="fas fa-search" style="position: absolute; right: 1rem; top: 50%; transform: translateY(-50%); color: var(--gray); pointer-events: none;" aria-hidden="true"></i>
+        </div>
+        <p style="text-align: center; margin-top: 0.5rem; font-size: 0.875rem; color: var(--gray);">
+          <i class="fas fa-info-circle" aria-hidden="true"></i> Type keywords to filter questions
+        </p>
+      </div>
+
       <div class="faq-container">
 
         <h2 style="margin-bottom: 2rem; text-align: center; color: var(--primary-color);">Getting Started</h2>
