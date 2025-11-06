@@ -12,10 +12,16 @@ document.addEventListener('DOMContentLoaded', function() {
     navToggle.addEventListener('click', function() {
       navMenu.classList.toggle('active');
 
-      // Change icon
-      const icon = this.querySelector('span');
+      // Change icon (Font Awesome)
+      const icon = this.querySelector('i');
       if (icon) {
-        icon.textContent = navMenu.classList.contains('active') ? '✕' : '☰';
+        if (navMenu.classList.contains('active')) {
+          icon.classList.remove('fa-bars');
+          icon.classList.add('fa-times');
+        } else {
+          icon.classList.remove('fa-times');
+          icon.classList.add('fa-bars');
+        }
       }
     });
   }
@@ -26,9 +32,10 @@ document.addEventListener('DOMContentLoaded', function() {
     link.addEventListener('click', function() {
       if (window.innerWidth <= 768) {
         navMenu.classList.remove('active');
-        const icon = navToggle.querySelector('span');
+        const icon = navToggle.querySelector('i');
         if (icon) {
-          icon.textContent = '☰';
+          icon.classList.remove('fa-times');
+          icon.classList.add('fa-bars');
         }
       }
     });
@@ -40,9 +47,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if (!isClickInsideNav && navMenu.classList.contains('active')) {
       navMenu.classList.remove('active');
-      const icon = navToggle.querySelector('span');
+      const icon = navToggle.querySelector('i');
       if (icon) {
-        icon.textContent = '☰';
+        icon.classList.remove('fa-times');
+        icon.classList.add('fa-bars');
       }
     }
   });
@@ -240,8 +248,9 @@ document.head.appendChild(style);
 
 // Scroll to Top Button (optional)
 const scrollToTopBtn = document.createElement('button');
-scrollToTopBtn.innerHTML = '↑';
+scrollToTopBtn.innerHTML = '<i class="fas fa-arrow-up" aria-hidden="true"></i>';
 scrollToTopBtn.className = 'scroll-to-top';
+scrollToTopBtn.setAttribute('aria-label', 'Scroll to top');
 scrollToTopBtn.style.cssText = `
   position: fixed;
   bottom: 30px;
