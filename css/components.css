@@ -411,6 +411,16 @@
 .content-image {
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow-lg);
+  overflow: hidden;
+}
+
+.content-image img,
+.content-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  min-height: 400px;
 }
 
 .content-text h2 {
