@@ -1,17 +1,17 @@
 /* ============================================
-   ActiveCampaign Agency Partner Website
+   Saturnea - Email Marketing Agency
    Main Stylesheet
    ============================================ */
 
 /* CSS Variables for consistent theming */
 :root {
-  /* Colors */
-  --primary-color: #0066CC;
-  --primary-dark: #0052A3;
-  --primary-light: #3385D6;
-  --secondary-color: #6C5CE7;
-  --accent-color: #00D084;
-  --accent-dark: #00B872;
+  /* Saturnea Brand Colors */
+  --primary-color: #1E40AF;
+  --primary-dark: #1E3A8A;
+  --primary-light: #3B82F6;
+  --secondary-color: #7C3AED;
+  --accent-color: #10B981;
+  --accent-dark: #059669;
 
   /* Neutrals */
   --dark: #1E1E1E;
@@ -317,7 +317,7 @@ section {
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(135deg, #0066CC 0%, #4776E6 50%, #6C5CE7 100%);
+  background: linear-gradient(135deg, #1E40AF 0%, #3B82F6 50%, #7C3AED 100%);
   color: var(--white);
   padding: var(--spacing-xxl) 0;
   position: relative;
